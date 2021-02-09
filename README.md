@@ -1,3 +1,9 @@
+# Requirement  
+python = 3.6  
+tqdm  
+psutil  
+tensorflow-gpu = 1.14  
+keras = 2.3
 # TSRA
 The simulation code of TSRA
 
