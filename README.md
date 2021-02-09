@@ -21,26 +21,26 @@ cd Upper_bound
 python main.py
 ```  
 
-## Run FSRA bound
+## Run FSRA 
 ```
 cd FSRA  
 python main.py
 ```  
 
-## Run FSQA bound
+## Run FSQA 
 ```
 cd FSQA  
 python main.py
 ```  
 
-## Run FSTA bound
+## Run TSRA 
 ```
-cd FSTA  
+cd TSRA  
 python main.py
 ```  
 
 
-## Run DLMA bound
+## Run DLMA 
 ```
 cd DLMA
 cd FNN
