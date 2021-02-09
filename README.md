@@ -1,11 +1,19 @@
-# Requirement  
+# TSRA
+The simulation code of TSRA
+
+# Declaration
+The code author of DLMA is YidingYu.  
+https://github.com/YidingYu/DLMA  
+We have made some adjustments to suit delay-constrained communication.  
+
+
+
+## Requirement  
 python = 3.6  
 tqdm  
 psutil  
 tensorflow-gpu = 1.14  
 keras = 2.3
-# TSRA
-The simulation code of TSRA
 
 ## Run upper bound
 ```
