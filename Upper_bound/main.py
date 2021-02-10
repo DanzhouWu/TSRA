@@ -37,7 +37,7 @@ if __name__ == '__main__':
     pb2 = 0.4
     ps2 = 0.6
 
-    D = 2
-    D_= 2
+    D = 5
+    D_= 5
 
     upper_bound(D=D, D_= D_, pb1=pb1, pt1=pt1, ps1=ps1, pb2=pb2, ps2=ps2)
