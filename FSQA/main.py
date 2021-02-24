@@ -9,7 +9,7 @@ def FSQA(D, D_, pb1, pt1, ps1, pb2, ps2, iteration=int(5e6)):
     aloha = ALOHA_AGENT(D=D, arrival_rate=pb1, trans_prob=pt1)
     aloha.initialize()
 
-    FSQA_agent = FSQA_AGENT(D=D_, arrival_rate=pb2, learning_rate=0.01, gamma=0.99)
+    FSQA_agent = FSQA_AGENT(D=D_, arrival_rate=pb2, learning_rate=0.01, gamma=0.9)
     FSQA_agent.initailize()
 
     FSQA_reward = []
