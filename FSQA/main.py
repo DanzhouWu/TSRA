@@ -5,7 +5,7 @@ from fsqa_agent import FSQA_AGENT
 from environment import ENVIRONMENT
 
 # # get FSQA timelt throughput
-def FSQA(D, D_, pb1, pt1, ps1, pb2, ps2, iteration=int(5e6)):
+def FSQA(D, D_, pb1, pt1, ps1, pb2, ps2, iteration=int(1e7)):
     aloha = ALOHA_AGENT(D=D, arrival_rate=pb1, trans_prob=pt1)
     aloha.initialize()
 
