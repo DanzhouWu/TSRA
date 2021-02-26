@@ -9,7 +9,7 @@ def FSRA(D, D_, pb1, pt1, ps1, pb2, ps2, iteration=int(5e6)):
     aloha = ALOHA_AGENT(D=D, arrival_rate=pb1, trans_prob=pt1)
     aloha.initialize()
 
-    FSRA_agent = FSRA_AGENT(D=D_, arrival_rate=pb2, learning_rate=0.001)
+    FSRA_agent = FSRA_AGENT(D=D_, arrival_rate=pb2, learning_rate=0.01)
     FSRA_agent.initailize()
 
     env = ENVIRONMENT(aloha_channel=ps1, agent_channel=ps2, aloha=aloha, agent=FSRA_agent)
