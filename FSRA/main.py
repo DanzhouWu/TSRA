@@ -5,7 +5,7 @@ from fsra_agent import FSRA_AGENT
 from environment import ENVIRONMENT
 
 # get FSRA timelt throughput
-def FSRA(D, D_, pb1, pt1, ps1, pb2, ps2, iteration=int(5e6)):
+def FSRA(D, D_, pb1, pt1, ps1, pb2, ps2, iteration=int(1e7)):
     aloha = ALOHA_AGENT(D=D, arrival_rate=pb1, trans_prob=pt1)
     aloha.initialize()
 
@@ -32,6 +32,6 @@ if __name__ == "__main__":
     pb2 = 0.4
     ps2 = 0.6
 
-    D = 10
-    D_= 10
+    D = 5
+    D_= 5
     FSRA(D=D, D_=D_, pb1=pb1, pt1=pt1, ps1=ps1, pb2=pb2, ps2=ps2)
