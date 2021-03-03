@@ -15,6 +15,7 @@ def multichainLP(D, D_, pb1, pt1, ps1, pb2, ps2):
 
     con1 = (x >= 0)
     con2 = (y >= 0)
+    con3 = (sum(x) == 1)
 
     tp_w, tp_t = getTrans_prob(D, D_, pb1, pb2, ps1, ps2, pt1)
 
@@ -45,7 +46,7 @@ def multichainLP(D, D_, pb1, pt1, ps1, pb2, ps2):
         item2 = y[j] + y[j+state_num]
         con.append((item1 + item2 - item3) == alpha)
     
-    con += [con1, con2]
+    con += [con1, con2, con3]
 
     reward_wait = np.zeros(shape=(state_num, 1))
     for i in range(state_num):
@@ -73,7 +74,7 @@ def multichainLP(D, D_, pb1, pt1, ps1, pb2, ps2):
             m += opt_x[s, a]
             n += opt_y[s, a]
 
-        if m != 0:
+        if m < 0.00001:
             for a in range(action_num):
                 policy[s, a] = opt_x[s, a] / m
         else:
