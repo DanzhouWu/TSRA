@@ -34,14 +34,7 @@ class SPECIFY_AGENT(object):
         ###########################################
         index = state2index(L1=aloha_queue, L2=self.queue, O=observation)
 
-        wait_p = self.policy[index, 0]
-        trans_p = self.policy[index, 1]
-        if wait_p == 0 and trans_p == 0:
-            self.action = round(np.random.uniform())
-        elif wait_p > np.random.uniform():
-            self.action = 0
-        else:
-            self.action = 1
+        self.action = np.argmax(self.policy[index,:])
         if sum(self.queue) == 0:
             self.action = 0
 
