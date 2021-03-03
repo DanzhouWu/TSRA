@@ -74,10 +74,11 @@ def multichainLP(D, D_, pb1, pt1, ps1, pb2, ps2):
             m += opt_x[s, a]
             n += opt_y[s, a]
 
-        if m < 0.00001:
+        if m > 0.00001:
             for a in range(action_num):
                 policy[s, a] = opt_x[s, a] / m
         else:
+            for a in range(action_num):
                 policy[s, a] = opt_y[s, a] / n
     return policy
 
