@@ -37,7 +37,7 @@ class SPECIFY_AGENT(object):
         self.action = np.argmax(self.policy[index,:])
         if sum(self.queue) == 0:
             self.action = 0
-        if np.np.argmax(self.policy[index,0]) > np.random.uniform():
+        if np.argmax(self.policy[index,0]) > np.random.uniform():
             self.action = 0
         else:
             self.action = 1
