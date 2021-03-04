@@ -42,9 +42,10 @@ class TSRA_AGENT(object):
             reward = 1
         else:
             reward = 0
-        self.Q_table[index_1][self.action] += self.learning_rate \
+        temp = self.learning_rate \
             * (reward + np.max(self.Q_table[index_2]) - self.Q_table[index_1][self.action] - self.rho)
-        self.rho +=  self.learning_rate * (reward + np.max(self.Q_table[index_2]) - self.Q_table[index_1][self.action] - self.rho)
+        self.Q_table[index_1][self.action] += temp
+        self.rho += temp
         # self.Q_table[index_1][self.action] += self.learning_rate \
             # * (reward + self.gamma * np.max(self.Q_table[index_2]) - self.Q_table[index_1][self.action] - self.rho)
         # self.rho +=  self.learning_rate * (reward + self.gamma * np.max(self.Q_table[index_2]) - self.Q_table[index_1][self.action] - self.rho)
