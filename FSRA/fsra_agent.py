@@ -35,9 +35,10 @@ class FSRA_AGENT(object):
             reward = 1
         else:
             reward = 0
-        self.Q_table[index_1][self.action] += self.learning_rate \
+        temp = self.learning_rate \
             * (reward + np.max(self.Q_table[index_2]) - self.Q_table[index_1][self.action] - self.rho)
-        self.rho +=  self.learning_rate * (reward + np.max(self.Q_table[index_2]) - self.Q_table[index_1][self.action] - self.rho)
+        self.Q_table[index_1][self.action] += temp
+        self.rho += temp
 
     def update_queue(self, observation):
         self.state.append(observation)
