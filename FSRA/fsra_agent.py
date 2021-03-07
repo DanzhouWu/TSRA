@@ -25,7 +25,7 @@ class FSRA_AGENT(object):
             self.action = 1
         else:
             self.action = 0
-        self.state.append('B')
+        self.state.append('I')
         self.state.append(copy.deepcopy(self.queue))
 
     def update_Q_table(self, observation):
