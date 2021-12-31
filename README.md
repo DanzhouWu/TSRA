@@ -19,6 +19,7 @@ Note that The code author of [DLMA](https://github.com/YidingYu/DLMA) is YidingY
 The code of two-device case is in the folder "two_device".
 
 You can run the algorithm by entering the corresponding folder and using the following command:
+
 ``
 python main.py
 ``
