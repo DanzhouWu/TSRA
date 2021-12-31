@@ -1,4 +1,4 @@
-# This file is to get the transition probability matrix
+# This file is an example for getting the transition probability matrix
 
 ## Run
 ```
