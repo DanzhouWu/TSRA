@@ -17,22 +17,32 @@ Note that The code author of [DLMA](https://github.com/YidingYu/DLMA) is YidingY
 ## Two-device case
 
 The code of two-device case is in the folder "two_device".
+
 You can run the algorithm by entering the corresponding folder and using the following command:
 ``
 python main.py
 ``
+
 And there is an example for how to calculate the transition probability matrix for "Upper Bound" in the folder "TransitionProbaility".
+
 ## Multi-device case
+
 The code of two-device case is in the folder “multi_device”.
+
 You can run the algorithm by entering the corresponding folder and using the following command:
+
 ``
 python main.py
 ``
+
 There are some arguments you can change for different settings.
+
 For example:
+
 ``
 python main.py -D 10 -n1 3 -n2 100
 ``
+
 means that the deadline $D$ is 10, the  number of uncontrollable devices $N_1$ is 3 and the number of TSRA $N_2$ is 100.
 
 # Citation
