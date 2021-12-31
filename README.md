@@ -1,5 +1,5 @@
 # Introduction
-This project is the code for our work:
+This project is the code for our works:
  - **Reinforcement Learning for Improved Random   Access in Delay-Constrained Heterogeneous  Industrial IoT Networks**
  - **Reinforcement Learning Random Access for Delay-Constrained Heterogeneous Wireless Networks: A Two-User Case**
 
