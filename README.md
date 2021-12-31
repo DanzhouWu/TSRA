@@ -43,7 +43,7 @@ For example:
 python main.py -D 10 -n1 3 -n2 100
 ``
 
-means that the deadline $D$ is 10, the  number of uncontrollable devices $N_1$ is 3 and the number of TSRA $N_2$ is 100.
+means that the deadline ![](http://latex.codecogs.com/svg.latex?D) is 10, the  number of uncontrollable devices ![](http://latex.codecogs.com/svg.latex?N_1) is 3 and the number of TSRA ![](http://latex.codecogs.com/svg.latex?N_2) is 100.
 
 # Citation
 If you find this project useful, we would be grateful if you cite our paper.
