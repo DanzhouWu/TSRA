@@ -1,6 +1,6 @@
 # Introduction
 This project is the code for our works:
- - **Reinforcement Learning for Improved Random   Access in Delay-Constrained Heterogeneous  Industrial IoT Networks**
+ - **Reinforcement Learning for Improved Random   Access in Delay-Constrained Heterogeneous  Industrial IoT Networks** [(PDF)](https://leideng.github.io/paper/R.learning.for.dc.heterogeneous.networks.GCW.2021.pdf)
  - **Reinforcement Learning Random Access for Delay-Constrained Heterogeneous Wireless Networks: A Two-User Case**
 
 Note that The code author of [DLMA](https://github.com/YidingYu/DLMA) is YidingYu.  We have made some adjustments for delay-constrained communication.
